@@ -12,3 +12,9 @@ SELECT CITY
 FROM STATION
 WHERE ID % 2 = 0
 GROUP BY CITY;
+
+-- Weather station #4 challenge
+SELECT (COUNT(CITY) - COUNT(DISTINCT CITY))
+FROM STATION;
+
+-- Point of this above exercise was to show how to do simple math in the SELECT command, and to utilize DISTINCT.
