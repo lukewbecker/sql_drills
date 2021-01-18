@@ -38,3 +38,9 @@ LIMIT 1;
 SELECT DISTINCT CITY
 FROM STATION
 WHERE lower(substring(CITY, 1, 1)) IN ('a', 'e', 'i', 'o', 'u');
+
+-- Finding cities with the last letter being a vowel, requires one simple difference since I'm using the substring function. Nice!
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE lower(substring(CITY, -1, 1)) IN ('a', 'e', 'i', 'o', 'u');
