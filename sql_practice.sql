@@ -99,3 +99,13 @@ SELECT SUM(population)
 FROM city
 WHERE district LIKE "California"
 
+-- Query the average population of all cities in CITY where District is California.
+
+SELECT AVG(population)
+FROM city
+WHERE district LIKE "California";
+
+-- Query the average population for all cities in CITY, rounded down to the nearest integer.
+
+SELECT ROUND(AVG(population), 0)
+FROM city;
