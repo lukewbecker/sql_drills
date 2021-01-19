@@ -109,3 +109,23 @@ WHERE district LIKE "California";
 
 SELECT ROUND(AVG(population), 0)
 FROM city;
+
+-- Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
+
+SELECT SUM(population)
+FROM city
+WHERE countrycode LIKE "JPN";
+
+-- Query the difference between the maximum and minimum populations in CITY.
+
+SELECT (MAX(population) - MIN(population))
+FROM city;
+
+-- Samantha was tasked with calculating the average monthly salaries for all employees in the EMPLOYEES table, but did not realize her keyboard's  key was broken until after completing the calculation. She wants your help finding the difference between her miscalculation (using salaries with any zeroes removed), and the actual average salary.
+-- Write a query calculating the amount of error (i.e.:  average monthly salaries), and round it up to the next integer.
+
+SELECT CEILING(AVG(salary) - AVG(REPLACE(salary, '0', '')))
+FROM employees;
+
+-- So I learned about the ceiling function, and the replace function in this exercise.
+
