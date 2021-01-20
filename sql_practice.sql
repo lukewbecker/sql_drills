@@ -145,3 +145,49 @@ LIMIT 1;
 
 SELECT ROUND(SUM(lat_n), 2) AS lat, ROUND(SUM(long_w), 2) as lon
 FROM station;
+
+-- Query the sum of Northern Latitudes (LAT_N) from STATION having values greater than  and less than . Truncate your answer to  decimal places.
+
+SELECT ROUND(SUM(lat_n), 4)
+FROM station
+WHERE lat_n > 38.7880 AND lat_n < 137.2345
+
+-- Query the greatest value of the Northern Latitudes (LAT_N) from STATION that is less than . Truncate your answer to  decimal places.
+
+SELECT ROUND(MAX(lat_n), 4)
+FROM station
+WHERE lat_n < 137.2345
+
+-- Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) in STATION that is less than . Round your answer to  decimal places.
+
+SELECT ROUND(long_w, 4)
+FROM station
+WHERE lat_n < 137.2345
+ORDER BY lat_n DESC
+LIMIT 1
+
+-- Query the smallest Northern Latitude (LAT_N) from STATION that is greater than . Round your answer to  decimal places.
+
+SELECT ROUND(MIN(lat_n), 4)
+FROM station
+WHERE lat_n > 38.7780
+
+-- Query the Western Longitude (LONG_W)where the smallest Northern Latitude (LAT_N) in STATION is greater than . Round your answer to  decimal places.
+
+SELECT ROUND(long_w, 4)
+FROM station
+WHERE lat_n > 38.7780
+ORDER BY lat_n ASC
+LIMIT 1;
+
+/* Consider  and  to be two points on a 2D plane.
+
+ happens to equal the minimum value in Northern Latitude (LAT_N in STATION).
+ happens to equal the minimum value in Western Longitude (LONG_W in STATION).
+ happens to equal the maximum value in Northern Latitude (LAT_N in STATION).
+ happens to equal the maximum value in Western Longitude (LONG_W in STATION).
+Query the Manhattan Distance between points  and  and round it to a scale of  decimal places. */
+
+SELECT ROUND(ABS(MIN(lat_n) - MAX(lat_n)) + ABS(MIN(long_w) - MAX(long_w)), 4)
+FROM station;
+
