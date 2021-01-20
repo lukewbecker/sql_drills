@@ -191,3 +191,11 @@ Query the Manhattan Distance between points  and  and round it to a scale of  de
 SELECT ROUND(ABS(MIN(lat_n) - MAX(lat_n)) + ABS(MIN(long_w) - MAX(long_w)), 4)
 FROM station;
 
+-- Consider  and  to be two points on a 2D plane where  are the respective minimum and maximum values of Northern Latitude (LAT_N) and  are the respective minimum and maximum values of Western Longitude (LONG_W) in STATION.
+
+-- Query the Euclidean Distance between points  and  and format your answer to display  decimal digits.
+
+SELECT ROUND(SQRT(POWER(MIN(LAT_N)-MAX(LAT_N), 2) + POWER(MIN(LONG_W)-MAX(LONG_W), 2)), 4)
+FROM station;
+
+-- This quiz I learned more about the square root function and the power function in SQL. I'm 
