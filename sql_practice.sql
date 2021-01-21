@@ -204,3 +204,24 @@ FROM station;
 
 SELECT ROUND(MEDIAN(Lat_N), 4)
 FROM Station;
+
+-- Triangles problem:
+
+SELECT CASE             
+            WHEN A + B > C AND B + C > A AND A + C > B THEN
+                CASE 
+                    WHEN A = B AND B = C THEN 'Equilateral'
+                    WHEN A = B OR B = C OR A = C THEN 'Isosceles'
+                    ELSE 'Scalene'
+                END
+            ELSE 'Not A Triangle'
+        END
+FROM TRIANGLES;
+
+-- Found the city population sum in Asia:
+
+SELECT SUM(c1.population)
+FROM city AS c1
+INNER JOIN country AS c2
+ON c1.countrycode = c2.code
+WHERE continent LIKE 'Asia';
