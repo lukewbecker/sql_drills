@@ -199,3 +199,8 @@ SELECT ROUND(SQRT(POWER(MIN(LAT_N)-MAX(LAT_N), 2) + POWER(MIN(LONG_W)-MAX(LONG_W
 FROM station;
 
 -- This quiz I learned more about the square root function and the power function in SQL. I'm 
+
+-- weather station 20. So MySQL doesn't have a median command. That's interesting. But Oracle does. Weird.
+
+SELECT ROUND(MEDIAN(Lat_N), 4)
+FROM Station;
