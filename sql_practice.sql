@@ -225,3 +225,18 @@ FROM city AS c1
 INNER JOIN country AS c2
 ON c1.countrycode = c2.code
 WHERE continent LIKE 'Asia';
+
+-- Finding all city names in Africa
+SELECT c1.name
+FROM city AS c1
+INNER JOIN country AS c2
+ON c1.countrycode = c2.code
+WHERE continent LIKE 'Africa';
+
+
+-- Finding the population of each continent:
+SELECT country.continent, FLOOR(AVG(city.population))
+FROM city
+INNER JOIN country
+ON city.countrycode = country.code
+GROUP BY country.continent;
