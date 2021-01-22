@@ -240,3 +240,14 @@ FROM city
 INNER JOIN country
 ON city.countrycode = country.code
 GROUP BY country.continent;
+
+-- Drawing a triangle.
+
+set @number = 21;
+select repeat('* ', @number := @number - 1) from information_schema.tables;
+
+-- Drawing the triangle backwards:
+
+set @row = 0;
+select repeat('* ', @row := @row + 1) from information_schema.tables
+WHERE @row < 20;
