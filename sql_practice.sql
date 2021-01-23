@@ -207,15 +207,13 @@ FROM Station;
 
 -- Triangles problem:
 
-SELECT CASE             
-            WHEN A + B > C AND B + C > A AND A + C > B THEN
-                CASE 
-                    WHEN A = B AND B = C THEN 'Equilateral'
-                    WHEN A = B OR B = C OR A = C THEN 'Isosceles'
-                    ELSE 'Scalene'
-                END
-            ELSE 'Not A Triangle'
-        END
+SELECT 
+    CASE 
+        WHEN A >= (B + C) OR B >= (A + C) OR C >= (A + B) THEN 'Not A Triangle'
+        WHEN A = B AND A = C THEN 'Equilateral'
+        WHEN A = B OR B = C OR A = C THEN 'Isosceles'
+        ELSE 'Scalene'
+    END
 FROM TRIANGLES;
 
 -- Found the city population sum in Asia:
@@ -251,3 +249,4 @@ select repeat('* ', @number := @number - 1) from information_schema.tables;
 set @row = 0;
 select repeat('* ', @row := @row + 1) from information_schema.tables
 WHERE @row < 20;
+
