@@ -263,3 +263,10 @@ SELECT
 FROM occupations
 GROUP BY occupation
 ORDER BY total;
+
+-- Student Marks:
+SELECT IF(GRADE < 8, 'NULL', Name), Grade, Marks
+FROM students 
+JOIN grades
+WHERE Marks BETWEEN Min_Mark AND Max_Mark
+ORDER BY Grade DESC, Name;
