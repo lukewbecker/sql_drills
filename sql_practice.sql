@@ -270,3 +270,6 @@ FROM students
 JOIN grades
 WHERE Marks BETWEEN Min_Mark AND Max_Mark
 ORDER BY Grade DESC, Name;
+
+-- SQL Codeup curriculum practice:
+
