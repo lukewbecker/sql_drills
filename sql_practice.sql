@@ -271,5 +271,12 @@ JOIN grades
 WHERE Marks BETWEEN Min_Mark AND Max_Mark
 ORDER BY Grade DESC, Name;
 
--- SQL Codeup curriculum practice:
+-- SQL Codeup curriculum practice. This is using my access to the Codeup DB.
+
+-- I'll need to join two tables together, and then show all the languages spoken with % in Santa Monica.
+SELECT cl.language, cl.Percentage
+FROM city AS c
+INNER JOIN countrylanguage AS cl ON c.CountryCode = cl.CountryCode
+WHERE name LIKE "Santa Monica"
+ORDER BY cl.Percentage;
 
