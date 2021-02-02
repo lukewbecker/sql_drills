@@ -293,3 +293,10 @@ SELECT Region, SUM(co.population) AS pop
 FROM country as co
 GROUP BY Region
 ORDER BY pop DESC;
+
+-- population for each continent
+
+SELECT Continent, SUM(co.population) AS pop
+FROM country as co
+GROUP BY Continent
+ORDER BY pop DESC;
