@@ -280,3 +280,16 @@ INNER JOIN countrylanguage AS cl ON c.CountryCode = cl.CountryCode
 WHERE name LIKE "Santa Monica"
 ORDER BY cl.Percentage;
 
+-- How many different countries in each region?
+
+SELECT region, count(name) AS num_countries
+FROM country
+GROUP BY region
+ORDER BY num_countries;
+
+-- population of each region:
+
+SELECT Region, SUM(co.population) AS pop
+FROM country as co
+GROUP BY Region
+ORDER BY pop DESC;
