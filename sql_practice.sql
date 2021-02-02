@@ -300,3 +300,33 @@ SELECT Continent, SUM(co.population) AS pop
 FROM country as co
 GROUP BY Continent
 ORDER BY pop DESC;
+
+-- Avg Life expectancy
+
+SELECT AVG(LifeExpectancy)
+FROM country;
+
+-- Avg life ex by region and continent
+
+SELECT Continent, AVG(LifeExpectancy) AS life_expectancy
+FROM country
+GROUP BY Continent
+ORDER BY life_expectancy;
+
+SELECT Region, AVG(LifeExpectancy) AS life_expectancy
+FROM country
+GROUP BY Region
+ORDER BY life_expectancy;
+
+-- Find all the countries whose local name is different from the official name
+
+SELECT Name
+FROM country
+WHERE Name NOT LIKE LocalName
+ORDER BY Name;
+
+-- How many countries have a life expectancy less than 55?
+
+SELECT COUNT(LifeExpectancy) AS life_expectancy
+FROM country
+WHERE LifeExpectancy < 55;
