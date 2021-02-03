@@ -330,3 +330,7 @@ ORDER BY Name;
 SELECT COUNT(LifeExpectancy) AS life_expectancy
 FROM country
 WHERE LifeExpectancy < 55;
+
+
+-- Finding the avg age by city
+
