@@ -332,5 +332,24 @@ FROM country
 WHERE LifeExpectancy < 55;
 
 
--- Finding the avg age by city
+-- What region of the world is city San Antonio located in?
 
+SELECT Region
+FROM country
+INNER JOIN city AS c ON country.Code = c.CountryCode
+WHERE c.name LIKE "San Antonio";
+
+
+-- What region of the world is city San Antonio located in?
+
+SELECT Region
+FROM country
+INNER JOIN city AS c ON country.Code = c.CountryCode
+WHERE c.name LIKE "San Antonio";
+
+-- What region of the world is city Valdivia located in?
+
+SELECT c.Name, "is in the area of ", Continent, Region, country.Name
+FROM country
+INNER JOIN city AS c ON country.Code = c.CountryCode
+WHERE c.name LIKE "Valdivia";
