@@ -353,3 +353,15 @@ SELECT c.Name, "is in the area of ", Continent, Region, country.Name
 FROM country
 INNER JOIN city AS c ON country.Code = c.CountryCode
 WHERE c.name LIKE "Valdivia";
+
+
+-- Datacamp challenges:
+
+-- 4. Select fields
+SELECT c.name AS country, continent, l.name as language, l.official AS official
+  -- 1. From countries (alias as c)
+  FROM countries AS c
+  -- 2. Join to languages (as l)
+  INNER JOIN languages AS l
+    -- 3. Match using code
+    USING (code);
