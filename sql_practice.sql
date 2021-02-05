@@ -366,3 +366,4 @@ SELECT c.name AS country, continent, l.name as language, l.official AS official
     -- 3. Match using code
     USING (code);
 
+-- sql comparing ROW and num_count
