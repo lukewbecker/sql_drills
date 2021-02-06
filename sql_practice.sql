@@ -367,3 +367,10 @@ SELECT c.name AS country, continent, l.name as language, l.official AS official
     USING (code);
 
 -- sql comparing ROW and num_count
+
+-- What is the life expectancy in San Antonio?
+
+SELECT c.name, LifeExpectancy
+FROM country
+INNER JOIN city AS c ON country.Code = c.CountryCode
+WHERE c.name LIKE "San Antonio";
