@@ -381,3 +381,8 @@ SELECT c.name, LifeExpectancy
 FROM country
 INNER JOIN city AS c ON country.Code = c.CountryCode
 WHERE c.name LIKE "Austin";
+
+SELECT c.name, LifeExpectancy
+FROM country
+INNER JOIN city AS c ON country.Code = c.CountryCode
+WHERE c.name LIKE "Dallas";
