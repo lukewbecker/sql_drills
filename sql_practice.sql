@@ -386,3 +386,12 @@ SELECT c.name, LifeExpectancy
 FROM country
 INNER JOIN city AS c ON country.Code = c.CountryCode
 WHERE c.name LIKE "Dallas";
+
+
+-- Sakila Database
+
+-- Display the first and last names in all lowercase of all the actors.
+
+SELECT LOWER(first_name) AS first_name, LCASE(last_name) AS last_name
+FROM actor
+ORDER BY last_name;
