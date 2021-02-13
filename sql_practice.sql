@@ -395,3 +395,9 @@ WHERE c.name LIKE "Dallas";
 SELECT LOWER(first_name) AS first_name, LCASE(last_name) AS last_name
 FROM actor
 ORDER BY last_name;
+
+-- You need to find the ID number, first name, and last name of an actor, of whom you know only the first name, "Joe." What is one query would you could use to obtain this information?
+
+SELECT actor_id, first_name, last_name
+FROM actor
+WHERE first_name LIKE "Joe";
