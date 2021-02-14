@@ -401,3 +401,15 @@ ORDER BY last_name;
 SELECT actor_id, first_name, last_name
 FROM actor
 WHERE first_name LIKE "Joe";
+
+-- Find all actors whose last name contain the letters "gen"
+
+SELECT last_name
+FROM actor
+WHERE last_name LIKE '&g&' OR '&e&' OR '&n&';
+
+-- Find all actors whose last names contain the letters "li". This time, order the rows by last name and first name, in that order
+
+SELECT last_name
+FROM actor
+WHERE last_name LIKE '&li&';
