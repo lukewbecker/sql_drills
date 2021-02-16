@@ -417,3 +417,7 @@ WHERE last_name LIKE '&li&';
 SELECT last_name
 FROM actor
 WHERE last_name LIKE 'E&';
+
+SELECT last_name
+FROM actor
+WHERE last_name LIKE 'A&';
