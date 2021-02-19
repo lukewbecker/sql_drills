@@ -412,15 +412,15 @@ WHERE last_name LIKE '&g&' OR '&e&' OR '&n&';
 
 SELECT last_name
 FROM actor
-WHERE last_name LIKE '&li&';
+WHERE last_name LIKE '%li%';
 
 SELECT last_name
 FROM actor
-WHERE last_name LIKE 'E&';
+WHERE last_name LIKE 'E%';
 
 SELECT last_name
 FROM actor
-WHERE last_name LIKE 'A&';
+WHERE last_name LIKE 'A%';
 
 -- Using IN, display the country_id and country columns for the following countries: Afghanistan, Bangladesh, and China:
 
@@ -429,3 +429,4 @@ USE sakila;
 SELECT country_id, country
 FROM country
 WHERE country IN ('Afghanistan', 'Bangladesh', 'China');
+
