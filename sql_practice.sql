@@ -406,7 +406,7 @@ WHERE first_name LIKE "Joe";
 
 SELECT last_name
 FROM actor
-WHERE last_name LIKE '&g&' OR '&e&' OR '&n&';
+WHERE last_name LIKE '%gen%';
 
 -- Find all actors whose last names contain the letters "li". This time, order the rows by last name and first name, in that order
 
@@ -430,3 +430,9 @@ SELECT country_id, country
 FROM country
 WHERE country IN ('Afghanistan', 'Bangladesh', 'China');
 
+-- List the last names of all the actors, as well as how many actors have that last name.
+
+SELECT last_name, COUNT(last_name) as last_name_count
+FROM actor
+GROUP BY last_name
+ORDER BY last_name_count DESC;
