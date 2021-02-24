@@ -444,3 +444,9 @@ FROM actor
 GROUP BY last_name
 HAVING COUNT(last_name) > 1
 ORDER BY COUNT(last_name) DESC;
+
+-- You cannot locate the schema of the address table. Which query would you use to re-create it?
+
+SELECT *
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE column_name LIKE '%CREATE%';
