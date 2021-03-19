@@ -450,3 +450,8 @@ ORDER BY COUNT(last_name) DESC;
 SELECT *
 FROM INFORMATION_SCHEMA.COLUMNS
 WHERE column_name LIKE '%CREATE%';
+
+-- 
+SELECT CustomerID, Num_of_orders
+WHERE phone LIKE '808%'
+FROM customers;
