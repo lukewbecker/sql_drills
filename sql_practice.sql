@@ -460,3 +460,28 @@ FROM customers;
 
 SELECT name, membercost
 FROM cd.facilities;
+
+-- How can you produce a list of all facilities with the word 'Tennis' in their name?
+SELECT *
+FROM cd.facilities
+WHERE name LIKE '%Tennis%';
+
+
+-- How can you retrieve the details of facilities with ID 1 and 5? Try to do it without using the OR operator.
+
+-- My solution:
+SELECT *
+FROM cd.facilities
+WHERE cd.facilities.facid = '1'
+
+UNION
+
+SELECT *
+FROM cd.facilities
+WHERE cd.facilities.facid = '5'
+
+-- Better solution: using the IN operator:
+
+SELECT *
+FROM cd.facilities
+WHERE facid IN (1, 5);
