@@ -494,3 +494,7 @@ SELECT name, CASE
 				ELSE 'cheap'
 				END AS cost
 FROM cd.facilities;
+
+
+-- Next question deals with more CASE statements.
+
