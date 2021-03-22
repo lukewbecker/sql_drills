@@ -502,3 +502,34 @@ SELECT memid, surname, firstname, joindate
 FROM cd.members
 WHERE joindate > '2012-09-01'
 
+
+-- How can you produce an ordered list of the first 10 surnames in the members table? The list must not contain duplicates.
+SELECT DISTINCT surname
+FROM cd.members
+ORDER BY surname
+LIMIT 10;
+
+-- You, for some reason, want a combined list of all surnames and all facility names. Yes, this is a contrived example :-). Produce that list!
+SELECT surname
+FROM cd.members
+
+UNION
+
+SELECT name
+
+
+-- You'd like to get the signup date of your last member. How can you retrieve this information?
+
+SELECT MAX(joindate)
+FROM cd.members;
+
+-- You'd like to get the first and last name of the last member(s) who signed up - not just the date. How can you do that?
+
+SELECT firstname, surname, joindate
+FROM cd.members
+WHERE joindate IN (
+  SELECT MAX(joindate)
+  FROM cd.members  
+  );
+
+  
