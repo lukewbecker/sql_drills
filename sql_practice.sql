@@ -540,3 +540,13 @@ SELECT starttime
 FROM cd.bookings AS bks
 JOIN cd.members AS mems ON mems.memid = bks.memid
 WHERE mems.firstname = 'David' AND mems.surname = 'Farrell';
+
+-- How can you produce a list of the start times for bookings for tennis courts, for the date '2012-09-21'? Return a list of start time and facility name pairings, ordered by the time.
+
+-- This one was a little more complicated because it wasn't simply about joining, but also about more advanced filtering using WHERE clauses involving DATES.
+
+SELECT bks.starttime AS start, fac.name AS name
+FROM cd.bookings AS bks
+JOIN cd.facilities AS fac ON bks.facid = fac.facid
+WHERE bks.starttime BETWEEN '2012-09-21 00:00:00' AND '2012-09-21 23:59:59' AND fac.name LIKE 'Tennis Court%'
+ORDER BY bks.starttime;
