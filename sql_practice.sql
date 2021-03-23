@@ -532,4 +532,11 @@ WHERE joindate IN (
   FROM cd.members  
   );
 
-  
+
+-- How can you produce a list of the start times for bookings by members named 'David Farrell'?
+
+
+SELECT starttime
+FROM cd.bookings AS bks
+JOIN cd.members AS mems ON mems.memid = bks.memid
+WHERE mems.firstname = 'David' AND mems.surname = 'Farrell';
