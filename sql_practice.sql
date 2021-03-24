@@ -550,3 +550,27 @@ FROM cd.bookings AS bks
 JOIN cd.facilities AS fac ON bks.facid = fac.facid
 WHERE bks.starttime BETWEEN '2012-09-21 00:00:00' AND '2012-09-21 23:59:59' AND fac.name LIKE 'Tennis Court%'
 ORDER BY bks.starttime;
+
+-- How can you output a list of all members who have recommended another member? Ensure that there are no duplicates in the list, and that results are ordered by (surname, firstname).
+
+SELECT DISTINCT recs.firstname AS firstname, recs.surname AS surname
+FROM cd.members AS mems
+INNER JOIN cd.members AS recs ON recs.memid = mems.recommendedby
+ORDER BY surname, firstname;
+
+-- How can you output a list of all members, including the individual who recommended them (if any)? Ensure that results are ordered by (surname, firstname).
+
+
+SELECT mems.firstname AS memfname, mems.surname AS memsname, recs.firstname AS recfname, recs.surname AS recsname
+FROM cd.members AS mems
+LEFT JOIN cd.members AS recs ON recs.memid = mems.recommendedby
+ORDER BY mems.surname, mems.firstname;
+
+-- How can you produce a list of all members who have used a tennis court? Include in your output the name of the court, and the name of the member formatted as a single column. Ensure no duplicate data, and order by the member name followed by the facility name.
+
+SELECT DISTINCT mems.firstname || ' ' || mems.surname AS member, fac.name AS facility
+FROM cd.members AS mems
+JOIN cd.bookings AS bks ON bks.memid = mems.memid
+JOIN cd.facilities AS fac ON fac.facid = bks.facid
+WHERE fac.name LIKE 'Tennis Court%'
+ORDER BY member, facility;
