@@ -566,7 +566,7 @@ FROM cd.members AS mems
 LEFT JOIN cd.members AS recs ON recs.memid = mems.recommendedby
 ORDER BY mems.surname, mems.firstname;
 
--- How can you produce a list of all members who have used a tennis court? Include in your output the name of the court, and the name of the member formatted as a single column. Ensure no duplicate data, and order by the member name followed by the facility name.
+-- How can you produce a list of all members who have used a tennis court? Include in your output the name of the court, and the name of the member formatted as a single column. Ensure no duplicate data, and order by the member name followed by the facility name. 
 
 SELECT DISTINCT mems.firstname || ' ' || mems.surname AS member, fac.name AS facility
 FROM cd.members AS mems
@@ -574,3 +574,6 @@ JOIN cd.bookings AS bks ON bks.memid = mems.memid
 JOIN cd.facilities AS fac ON fac.facid = bks.facid
 WHERE fac.name LIKE 'Tennis Court%'
 ORDER BY member, facility;
+
+-- 
+
