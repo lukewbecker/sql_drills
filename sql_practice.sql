@@ -574,6 +574,10 @@ JOIN cd.bookings AS bks ON bks.memid = mems.memid
 JOIN cd.facilities AS fac ON fac.facid = bks.facid
 WHERE fac.name LIKE 'Tennis Court%'
 ORDER BY member, facility;
+/*
+This space is being used for my data camp sql coursework
+So far this has been a good reenforcement of my learning through Codeup.
+*/
 
--- 
+
 
