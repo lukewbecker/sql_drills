@@ -590,3 +590,5 @@ FROM cities AS c
 -- 4. Where c.name like Hyderabad
 WHERE c.name LIKE 'Hydera%';
 
+-- Creating UNION clauses.
+
