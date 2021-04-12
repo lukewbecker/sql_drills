@@ -616,3 +616,35 @@ FROM matches_germany
 -- Group by the CASE statement alias
 GROUP BY home_team;
 
+
+SELECT 
+	m.date,
+	t.team_long_name AS opponent,
+    -- Complete the CASE statement with an alias
+	CASE WHEN m.home_goal > m.away_goal THEN 'Barcelona win!'
+        WHEN m.home_goal < m.away_goal THEN 'Barcelona loss :(' 
+        ELSE 'Tie' END AS outcome 
+FROM matches_spain AS m
+LEFT JOIN teams_spain AS t 
+ON m.awayteam_id = t.team_api_id
+-- Filter for Barcelona as the home team
+WHERE m.hometeam_id = 8634; 
+
+-- Results of the El Clasico over two years:
+
+SELECT 
+	date,
+	CASE WHEN hometeam_id = 8634 THEN 'FC Barcelona' 
+         ELSE 'Real Madrid CF' END as home,
+	CASE WHEN awayteam_id = 8634 THEN 'FC Barcelona' 
+         ELSE 'Real Madrid CF' END as away,
+	-- Identify all possible match outcomes
+	CASE WHEN home_goal > away_goal AND hometeam_id = 8634 THEN 'Barcelona win!'
+        WHEN home_goal > away_goal AND hometeam_id = 8633 THEN 'Real Madrid win!'
+        WHEN home_goal < away_goal AND awayteam_id = 8634 THEN 'Barcelona win!'
+        WHEN home_goal < away_goal AND awayteam_id = 8633 THEN 'Real Madrid win!'
+        ELSE 'Tie!' END AS outcome
+FROM matches_spain
+WHERE (awayteam_id = 8634 OR hometeam_id = 8634)
+      AND (awayteam_id = 8633 OR hometeam_id = 8633);
+
