@@ -659,3 +659,19 @@ FROM  matches_2013_2014
 WHERE (home_goal + away_goal) > 
        (SELECT 3 * AVG(home_goal + away_goal)
         FROM matches_2013_2014); 
+
+
+SELECT facid, SUM(slots) AS "Total Slots"
+FROM cd.bookings
+GROUP BY facid
+HAVING SUM(slots) > 1000
+ORDER BY facid;
+
+-- Working on aggregate exercies:
+SELECT name, SUM(slots * CASE WHEN memid = 0 then facs.guestcost
+				ELSE facs.membercost END) AS revenue
+FROM cd.bookings bks
+INNER JOIN cd.facilities AS facs
+	ON bks.facid = facs.facid
+GROUP BY name
+ORDER BY revenue;
