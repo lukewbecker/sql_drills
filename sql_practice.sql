@@ -677,3 +677,21 @@ ORDER BY revenue;
 
 -- Subqueries in FROM:
 
+SELECT
+
+    country,
+    date,
+    home_goal,
+    away_goal
+FROM 
+
+	(SELECT c.name AS country, 
+     	    m.date, 
+     		m.home_goal, 
+     		m.away_goal,
+           (m.home_goal + m.away_goal) AS total_goals
+    FROM match AS m
+    LEFT JOIN country AS c
+    ON m.country_id = c.id) AS subq
+
+WHERE total_goals >= 10;
