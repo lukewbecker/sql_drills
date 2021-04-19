@@ -756,3 +756,8 @@ WHERE
 
 -- Correlated subquery practice
 
+-- setting up call for finding city names that start with San
+
+SELECT *
+FROM cities
+WHERE name = 'San%'
