@@ -778,3 +778,5 @@ FROM
 WHERE s.avg_goals > (SELECT AVG(home_goal + away_goal)
                      FROM match AS m
                      WHERE s.stage > m.stage);
+
+-- Next I'll be working on more advanced subquery practice.
