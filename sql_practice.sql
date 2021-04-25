@@ -780,3 +780,7 @@ WHERE s.avg_goals > (SELECT AVG(home_goal + away_goal)
                      WHERE s.stage > m.stage);
 
 -- Next I'll be working on more advanced subquery practice.
+
+SELECT *
+FROM table_name
+WHERE salary > 1000000;
