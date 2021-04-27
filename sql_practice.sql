@@ -790,3 +790,7 @@ WHERE salary > 1000000;
 SELECT COUNT(age), name
 FROM employees
 GROUP BY age;
+
+SELECT AVG(home_goal)
+FROM stage
+WHERE avg_goals > 10;
