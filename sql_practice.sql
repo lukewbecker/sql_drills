@@ -794,3 +794,6 @@ GROUP BY age;
 SELECT AVG(home_goal)
 FROM stage
 WHERE avg_goals > 10;
+
+SELECT *
+FROM table;
