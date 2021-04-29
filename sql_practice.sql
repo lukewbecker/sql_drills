@@ -784,16 +784,3 @@ WHERE s.avg_goals > (SELECT AVG(home_goal + away_goal)
 SELECT *
 FROM table_name
 WHERE salary > 1000000;
-
--- select statement drills
-
-SELECT COUNT(age), name
-FROM employees
-GROUP BY age;
-
-SELECT AVG(home_goal)
-FROM stage
-WHERE avg_goals > 10;
-
-SELECT *
-FROM table;
