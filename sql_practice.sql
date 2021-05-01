@@ -783,4 +783,4 @@ WHERE s.avg_goals > (SELECT AVG(home_goal + away_goal)
 
 SELECT *
 FROM table_name
-WHERE salary > 1000000;
+WHERE salary > 1000000; 
