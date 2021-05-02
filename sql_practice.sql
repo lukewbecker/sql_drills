@@ -784,3 +784,21 @@ WHERE s.avg_goals > (SELECT AVG(home_goal + away_goal)
 SELECT *
 FROM table_name
 WHERE salary > 1000000; 
+
+
+SELECT
+  s.stage
+  ROUND(s.avg_goals, 2) AS avg_goal
+  (SELECT AVG(home_goal + away_goal)
+  FROM match
+  WHERE season = '2012/2013')
+FROM
+  (SELECT
+    stage, 
+    AVG(home_goal + away_goal) AS avg_goals
+    FROM match
+    WHERE season = '2012/2013'
+    GROUP BY stage) AS s
+WHERE s.avg_goals > (SELECT AVG(home_goal + away_goal)
+                     FROM match AS m
+                     WHERE s.stage > m.stage);
