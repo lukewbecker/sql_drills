@@ -823,3 +823,6 @@ WHERE (awayteam_id = 8634 OR hometeam_id = 8634)
       AND (awayteam_id = 8633 OR hometeam_id = 8633);
 
 -- Additional drills:
+
+SELECT *
+FROM cities;
