@@ -826,3 +826,7 @@ WHERE (awayteam_id = 8634 OR hometeam_id = 8634)
 
 SELECT *
 FROM cities;
+
+SELECT COUNT(population)
+FROM cities
+GROUP BY population;
