@@ -830,3 +830,7 @@ FROM cities;
 SELECT COUNT(population)
 FROM cities
 GROUP BY population;
+
+SELECT *
+FROM test
+WHERE age > 50;
