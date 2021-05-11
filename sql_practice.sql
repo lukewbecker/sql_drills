@@ -847,3 +847,7 @@ INSERT INTO authors(first_name, last_name) VALUES
     ('Douglas', 'Adams'),
     ('Mark', 'Twain'),
     ('Kurt', 'Vonnegut');
+
+
+SELECT *
+FROM brands;
