@@ -861,3 +861,6 @@ CREATE TABLE quote_topic (
 
 SELECT *
 FROM all;
+
+SELECT COUNT(*)
+FROM counties;
