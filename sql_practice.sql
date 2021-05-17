@@ -864,3 +864,5 @@ FROM all;
 
 SELECT COUNT(*)
 FROM counties;
+
+-- Testing out setting up my own SQL server
