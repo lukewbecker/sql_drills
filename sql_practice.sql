@@ -870,3 +870,6 @@ FROM counties;
 -- Using the Codeup portal to create a new server. Hopefully it works out fine.
 
 -- Still working on the backend.
+
+SELECT *
+FROM tables;
