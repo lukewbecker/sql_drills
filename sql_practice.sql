@@ -865,12 +865,18 @@ FROM all;
 SELECT COUNT(*)
 FROM counties;
 
--- Testing out setting up my own SQL server
-
--- Using the Codeup portal to create a new server. Hopefully it works out fine.
-
--- Still working on the backend.
 
 SELECT *
 FROM tables;
 
+
+-- Testing out setting up my own SQL server
+
+-- Using the Codeup portal to create a new server. Hopefully it works out fine.
+
+CREATE TABLE quote_topic (
+    quote_id INTEGER UNSIGNED NOT NULL,
+    topic_id INTEGER UNSIGNED NOT NULL,
+    FOREIGN KEY (quote_id) REFERENCES quotes(id),
+    FOREIGN KEY (topic_id) REFERENCES topics(id)
+);
