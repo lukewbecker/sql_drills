@@ -880,3 +880,5 @@ CREATE TABLE quote_topic (
     FOREIGN KEY (quote_id) REFERENCES quotes(id),
     FOREIGN KEY (topic_id) REFERENCES topics(id)
 );
+
+-- SQL server on webservice.
