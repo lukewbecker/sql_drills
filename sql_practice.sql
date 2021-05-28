@@ -881,4 +881,4 @@ CREATE TABLE quote_topic (
     FOREIGN KEY (topic_id) REFERENCES topics(id)
 );
 
--- SQL server on webservice.
+-- SQL server on webservice. Going to use SQL lite for now.
