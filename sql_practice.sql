@@ -882,3 +882,6 @@ CREATE TABLE quote_topic (
 );
 
 -- SQL server on webservice. Going to use SQL lite for now.
+
+SELECT *
+FROM table;
