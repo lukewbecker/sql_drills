@@ -885,3 +885,7 @@ CREATE TABLE quote_topic (
 
 SELECT *
 FROM table;
+
+SELECT count(names)
+FROM TABLE
+HAVING count(names) > 10;
