@@ -889,3 +889,5 @@ FROM table;
 SELECT count(names)
 FROM TABLE
 HAVING count(names) > 10;
+
+-- counting in SQL is fun
