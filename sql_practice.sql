@@ -891,3 +891,8 @@ FROM TABLE
 HAVING count(names) > 10;
 
 -- counting in SQL is fun
+
+SELECT film_id, num_votes
+FROM reviews 
+ORDER BY num_votes
+LIMIT 5;
