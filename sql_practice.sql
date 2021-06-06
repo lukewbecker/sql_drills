@@ -896,3 +896,6 @@ SELECT film_id, num_votes
 FROM reviews 
 ORDER BY num_votes
 LIMIT 5;
+
+SELECT COUNT(*)
+FROM states;
