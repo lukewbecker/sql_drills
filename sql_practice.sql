@@ -899,3 +899,14 @@ LIMIT 5;
 
 SELECT COUNT(*)
 FROM states;
+
+SELECT release_year, AVG(duration)
+FROM films
+GROUP BY release_year
+ORDER BY release_year DESC
+LIMIT 5;
+
+SELECT title, budget
+FROM films
+WHERE budget > 200000
+LIMIT 5;
