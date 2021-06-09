@@ -910,3 +910,8 @@ SELECT title, budget
 FROM films
 WHERE budget > 200000
 LIMIT 5;
+
+SELECT founding_year
+FROM companies 
+ORDER BY founding_year
+LIMIT 5;
