@@ -915,3 +915,6 @@ SELECT founding_year
 FROM companies 
 ORDER BY founding_year
 LIMIT 5;
+
+SELECT *
+FROM table;
