@@ -918,3 +918,6 @@ LIMIT 5;
 
 SELECT *
 FROM table;
+
+SELECT AVG(number)
+FROM table;
