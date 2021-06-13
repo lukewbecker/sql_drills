@@ -921,3 +921,6 @@ FROM table;
 
 SELECT AVG(number)
 FROM table;
+
+SELECT *
+FROM table;
