@@ -924,3 +924,5 @@ FROM table;
 
 SELECT *
 FROM table;
+
+-- Working on settling up SQLlite locally for cryptodatabase creation.
