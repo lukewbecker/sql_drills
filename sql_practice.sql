@@ -926,3 +926,8 @@ SELECT *
 FROM table;
 
 -- Working on settling up SQLlite locally for cryptodatabase creation.
+
+SELECT *
+FROM country_name
+WHERE year BETWEEN '2001' AND '2010'
+ORDER BY year DESC;
