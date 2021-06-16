@@ -931,3 +931,6 @@ SELECT *
 FROM country_name
 WHERE year BETWEEN '2001' AND '2010'
 ORDER BY year DESC;
+
+SELECT *
+FROM table;
