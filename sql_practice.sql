@@ -934,3 +934,6 @@ ORDER BY year DESC;
 
 SELECT *
 FROM table;
+
+SELECT *
+FROM table;
