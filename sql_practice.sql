@@ -941,3 +941,5 @@ FROM table;
 
 SELECT *
 from names;
+
+-- starting sqllite in python practice
