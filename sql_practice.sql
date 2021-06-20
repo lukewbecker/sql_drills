@@ -943,3 +943,7 @@ SELECT *
 from names;
 
 -- starting sqllite in python practice
+
+SELECT *
+FROM table
+ORDER BY name;
