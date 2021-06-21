@@ -947,3 +947,6 @@ from names;
 SELECT *
 FROM table
 ORDER BY name;
+
+SELECT *
+FROM table;
