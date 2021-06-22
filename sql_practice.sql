@@ -950,3 +950,8 @@ ORDER BY name;
 
 SELECT *
 FROM table;
+
+
+SELECT MIN(tax_amt)
+FROM taxes
+WHERE population > 10000;
