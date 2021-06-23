@@ -955,3 +955,7 @@ FROM table;
 SELECT MIN(tax_amt)
 FROM taxes
 WHERE population > 10000;
+
+SELECT MAX(population)
+FROM cities
+ORDER BY name;
