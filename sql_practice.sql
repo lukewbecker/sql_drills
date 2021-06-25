@@ -962,3 +962,10 @@ ORDER BY name;
 
 SELECT *
 FROM name_table;
+
+SELECT MAX(population)
+FROM cities
+ORDER BY name;
+
+SELECT *
+FROM name_table;
