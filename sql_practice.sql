@@ -969,3 +969,8 @@ ORDER BY name;
 
 SELECT *
 FROM name_table;
+
+SELECT names, dates, age
+FROM attendees
+WHERE age > 30
+ORDER BY names;
