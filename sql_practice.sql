@@ -974,3 +974,6 @@ SELECT names, dates, age
 FROM attendees
 WHERE age > 30
 ORDER BY names;
+
+SELECT *
+FROM table;
