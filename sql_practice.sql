@@ -977,3 +977,6 @@ ORDER BY names;
 
 SELECT *
 FROM table;
+
+SELECT payroll
+FROM salaries;
