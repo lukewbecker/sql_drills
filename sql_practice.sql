@@ -979,4 +979,5 @@ SELECT *
 FROM table;
 
 SELECT payroll
-FROM salaries;
+FROM salaries
+WHERE salary > 10000;
