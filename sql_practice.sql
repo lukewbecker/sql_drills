@@ -980,4 +980,5 @@ FROM table;
 
 SELECT payroll
 FROM salaries
-WHERE salary > 10000;
+WHERE salary > 10000
+ORDER BY name DESC;
