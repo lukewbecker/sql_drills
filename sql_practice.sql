@@ -978,6 +978,9 @@ ORDER BY names;
 SELECT *
 FROM table;
 
+
+-- How would I isolate only salaries above $10,000?
+
 SELECT payroll
 FROM salaries
 WHERE salary > 10000
