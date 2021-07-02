@@ -985,3 +985,15 @@ SELECT payroll
 FROM salaries
 WHERE salary > 10000
 ORDER BY name DESC;
+
+
+-- Bulk import statement to create simple SQL database from Excel file attempt:
+
+USE ImportFromExcel;
+GO
+BULK INSERT Data_bi FROM 'C:\Temp\data.csv'
+   WITH (
+      FIELDTERMINATOR = ',',
+      ROWTERMINATOR = '\n'
+);
+GO
