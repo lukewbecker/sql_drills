@@ -1001,10 +1001,3 @@ GO
 
 SELECT *
 FROM table;
-
-SELECT COUNT(age)
-FROM customer_info
-WHERE age > 50;
-
-SELECT *
-FROM customers;
