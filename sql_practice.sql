@@ -997,3 +997,8 @@ BULK INSERT Data_bi FROM 'C:\Temp\data.csv'
       ROWTERMINATOR = '\n'
 );
 GO
+
+
+SELECT *
+FROM people
+WHERE age > 25;
