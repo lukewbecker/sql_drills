@@ -1002,3 +1002,7 @@ GO
 SELECT *
 FROM people
 WHERE age > 25;
+
+SELECT COUNT(name)
+FROM employee
+WHERE salary > 100000;
