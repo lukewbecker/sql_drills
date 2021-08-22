@@ -1006,3 +1006,7 @@ WHERE age > 25;
 SELECT COUNT(name)
 FROM employee
 WHERE salary > 100000;
+
+SELECT COUNT(name)
+FROM employee
+WHERE salary > 100000;
