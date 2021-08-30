@@ -1059,3 +1059,11 @@ FROM
 WHERE s.avg_goals > (SELECT AVG(home_goal + away_goal)
                      FROM match AS m
                      WHERE s.stage > m.stage);
+
+
+-- HackerRank Weather Station Challenge
+
+SELECT CITY
+FROM STATION
+WHERE ID % 2 = 0
+GROUP BY CITY;
