@@ -1071,3 +1071,7 @@ GROUP BY CITY;
 
 Select name, state
 FROM table;
+
+
+Select name, state
+FROM table;
