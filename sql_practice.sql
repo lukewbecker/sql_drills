@@ -1075,3 +1075,6 @@ FROM table;
 
 Select name, state
 FROM table;
+
+Select name, state
+FROM table;
