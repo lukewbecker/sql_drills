@@ -32,6 +32,13 @@ ORDER BY l ASC, c ASC
 LIMIT 1;
 
 
+SELECT CITY AS c, LENGTH(CITY) AS l
+FROM STATION
+ORDER BY l ASC, c ASC
+LIMIT 1;
+
+
+
 
 -- Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
 
