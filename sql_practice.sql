@@ -1076,12 +1076,10 @@ WHERE ID % 2 = 0
 GROUP BY CITY;
 
 
-Select name, state
-FROM table;
+SELECT *
+FROM people
+WHERE age > 25;
 
-
-Select name, state
-FROM table;
-
-Select name, state
-FROM table;
+SELECT COUNT(name)
+FROM employee
+WHERE salary > 100000;
