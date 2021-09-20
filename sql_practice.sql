@@ -1094,3 +1094,11 @@ SELECT
         ELSE 'Scalene'
     END
 FROM TRIANGLES;
+
+
+-- HackerRank Weather Station Challenge
+
+SELECT CITY
+FROM STATION
+WHERE ID % 2 = 0
+GROUP BY CITY;
