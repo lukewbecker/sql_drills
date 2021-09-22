@@ -1114,3 +1114,6 @@ AND LOWER(SUBSTRING(CITY, -1, 1)) NOT IN ('a', 'e', 'i', 'o', 'u');
 
 SELECT *
 FROM table;
+
+SELECT *
+FROM table;
