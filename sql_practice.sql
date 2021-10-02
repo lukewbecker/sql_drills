@@ -1134,3 +1134,6 @@ GROUP BY CITY;
 
 SELECT *
 FROM table;
+
+SELECT *
+FROM table;
