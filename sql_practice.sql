@@ -1149,3 +1149,9 @@ GROUP BY CITY;
 SELECT count(age)
 FROM birthdays
 WHERE age > 31;
+
+-- Hackerrank test
+
+SELECT *
+FROM population
+WHERE age > 25;
