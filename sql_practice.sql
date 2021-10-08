@@ -1155,3 +1155,9 @@ WHERE age > 31;
 SELECT *
 FROM population
 WHERE age > 25;
+
+-- Hackerrank test
+
+SELECT *
+FROM population
+WHERE age < 50;
