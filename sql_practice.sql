@@ -1161,3 +1161,6 @@ WHERE age > 25;
 SELECT *
 FROM population
 WHERE age < 50;
+
+SELECT *
+FROM table;
