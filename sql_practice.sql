@@ -1164,3 +1164,8 @@ WHERE age < 50;
 
 SELECT *
 FROM table;
+
+SELECT Count(name), state
+FROM customers
+WHERE age > 25
+GROUP BY name;
