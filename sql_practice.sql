@@ -1171,3 +1171,7 @@ WHERE age > 25
 GROUP BY name;
 
 -- Hackerrank Hard challenges:
+
+SELECT *
+FROM name_table
+WHERE age > 25;
