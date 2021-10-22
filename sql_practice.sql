@@ -1175,3 +1175,6 @@ GROUP BY name;
 SELECT *
 FROM name_table
 WHERE age > 25;
+
+SELECT *
+FROM country;
