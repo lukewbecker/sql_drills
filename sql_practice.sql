@@ -1178,3 +1178,8 @@ WHERE age > 25;
 
 SELECT *
 FROM country;
+
+SELECT count(age)
+FROM population
+WHERE age > 25
+GROUP BY age;
