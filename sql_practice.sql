@@ -1183,3 +1183,6 @@ SELECT count(age)
 FROM population
 WHERE age > 25
 GROUP BY age;
+
+SELECT *
+FROM name_table;
