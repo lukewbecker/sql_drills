@@ -1186,3 +1186,6 @@ GROUP BY age;
 
 SELECT *
 FROM name_table;
+
+SELECT *
+FROM country_names;
