@@ -1189,3 +1189,8 @@ FROM name_table;
 
 SELECT *
 FROM country_names;
+
+SELECT COUNT(population)
+FROM nation_table
+WHERE population > 100000
+GROUP BY population;
