@@ -1194,3 +1194,8 @@ SELECT COUNT(population)
 FROM nation_table
 WHERE population > 100000
 GROUP BY population;
+
+SELECT COUNT(population)
+FROM nation_table
+WHERE population > 25000
+GROUP BY population;
