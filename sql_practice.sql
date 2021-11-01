@@ -1204,3 +1204,8 @@ SELECT COUNT(population)
 FROM nation_table
 WHERE population > 250000
 GROUP BY population;
+
+SELECT COUNT(age) AS ages
+FROM customer_base
+WHERE age > 21
+GROUP BY age;
