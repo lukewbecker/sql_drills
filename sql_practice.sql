@@ -1209,3 +1209,6 @@ SELECT COUNT(age) AS ages
 FROM customer_base
 WHERE age > 21
 GROUP BY age;
+
+SELECT *
+from names;
