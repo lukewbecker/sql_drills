@@ -1220,3 +1220,7 @@ GROUP BY age;
 
 SELECT *
 from name_table;
+
+SELECT AVG(salary)
+FROM employees
+WHERE salary < 100000;
