@@ -1224,3 +1224,7 @@ from name_table;
 SELECT AVG(salary)
 FROM employees
 WHERE salary < 100000;
+
+SELECT count(age)
+FROM names
+GROUP BY age;
