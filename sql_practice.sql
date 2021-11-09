@@ -1228,3 +1228,6 @@ WHERE salary < 100000;
 SELECT count(age)
 FROM names
 GROUP BY age;
+
+SELECT *
+FROM table;
