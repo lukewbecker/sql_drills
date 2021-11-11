@@ -1235,3 +1235,6 @@ FROM table;
 SELECT AVG(age)
 FROM customers
 GROUP BY age;
+
+SELECT *
+FROM table;
