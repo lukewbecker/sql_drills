@@ -1241,3 +1241,9 @@ FROM table;
 
 SELECT *
 FROM table;
+
+SELECT age, name, AVG(salary)
+FROM employees
+WHERE salary > 25000
+GROUP BY salary
+ORDER BY age;
