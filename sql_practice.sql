@@ -1247,3 +1247,6 @@ FROM employees
 WHERE salary > 25000
 GROUP BY salary
 ORDER BY age;
+
+SELCT *
+FROM table;
