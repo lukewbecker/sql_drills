@@ -1250,3 +1250,7 @@ ORDER BY age;
 
 SELCT *
 FROM table;
+
+SELECT AVG(population)
+FROM country
+GROUP BY population;
