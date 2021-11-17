@@ -1254,3 +1254,6 @@ FROM table;
 SELECT AVG(population)
 FROM country
 GROUP BY population;
+
+SELECT *
+FROM table;
