@@ -1257,3 +1257,6 @@ GROUP BY population;
 
 SELECT *
 FROM table;
+
+SELCT *
+FROM names;
