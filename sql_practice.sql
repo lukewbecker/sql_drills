@@ -1260,3 +1260,6 @@ FROM table;
 
 SELCT *
 FROM names;
+
+SELECT *
+from table;
