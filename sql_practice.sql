@@ -1263,3 +1263,7 @@ FROM names;
 
 SELECT *
 from table;
+
+SELCT avg(cost_estimates)
+FROM cost_est as ce
+GROUP BY ce;
