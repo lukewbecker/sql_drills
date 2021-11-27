@@ -1270,3 +1270,6 @@ GROUP BY ce;
 
 SELECT *
 FROM names_table;
+
+SELECT *
+FROM table;
