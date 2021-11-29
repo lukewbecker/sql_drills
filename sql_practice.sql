@@ -1273,3 +1273,8 @@ FROM names_table;
 
 SELECT *
 FROM table;
+
+SELECT AVG(number)
+from investments
+WHERE number > 100000
+GROUP BY number;
