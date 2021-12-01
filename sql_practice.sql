@@ -1281,3 +1281,10 @@ GROUP BY number;
 
 SELECT *
 FROM table;
+
+CREATE DATABASE MyDatabase:
+
+CREATE TABLE MyTable (
+  id int,
+  name VARCHAR(10)
+);
