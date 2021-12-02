@@ -1288,3 +1288,6 @@ CREATE TABLE MyTable (
   id int,
   name VARCHAR(10)
 );
+
+SELECT *
+FROM table;
