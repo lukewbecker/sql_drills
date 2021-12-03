@@ -1291,3 +1291,6 @@ CREATE TABLE MyTable (
 
 SELECT *
 FROM table;
+
+SELECT *
+FROM table;
