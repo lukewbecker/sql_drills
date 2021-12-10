@@ -1295,5 +1295,5 @@ FROM table;
 SELECT *
 FROM table;
 
-Select *
+SELECT *
 FROM table;
