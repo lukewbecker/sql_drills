@@ -1297,3 +1297,8 @@ FROM table;
 
 SELECT *
 FROM table;
+
+-- Testing the connection to my online database.
+
+SELECT *
+FROM names_table;
