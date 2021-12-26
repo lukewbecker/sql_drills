@@ -1302,3 +1302,6 @@ FROM table;
 
 SELECT *
 FROM names_table;
+
+SELECT *
+from tables;
