@@ -1305,3 +1305,6 @@ FROM names_table;
 
 SELECT *
 from tables;
+
+SELECT *
+FROM name_table;
