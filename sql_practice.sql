@@ -1300,3 +1300,7 @@ FROM table;
 
 SELECT *
 FROM tbl_dates;
+
+
+SELECT *
+from table_test;
