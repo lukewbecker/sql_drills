@@ -1304,3 +1304,6 @@ FROM tbl_dates;
 
 SELECT *
 from table_test;
+
+SELECT number, age
+FROM people;
