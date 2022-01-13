@@ -1307,3 +1307,6 @@ from table_test;
 
 SELECT number, age
 FROM people;
+
+SELECT *
+FROM table_name;
