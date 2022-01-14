@@ -1310,3 +1310,8 @@ FROM people;
 
 SELECT *
 FROM table_name;
+
+SELECT name, count(age) as ages
+FROM people
+WHERE age < 45
+GROUP BY age;
