@@ -1318,3 +1318,6 @@ GROUP BY age;
 
 SELECT *
 from table;
+
+SELECT *
+FROM table;
