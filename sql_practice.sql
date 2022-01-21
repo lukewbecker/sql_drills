@@ -1321,3 +1321,6 @@ from table;
 
 SELECT *
 FROM table;
+
+SELECT age
+from people;
