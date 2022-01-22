@@ -1324,3 +1324,7 @@ FROM table;
 
 SELECT age
 from people;
+
+SELECT COUNT(age)
+FROM populations
+GROUP BY age;
