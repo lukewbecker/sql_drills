@@ -1328,3 +1328,6 @@ from people;
 SELECT COUNT(age)
 FROM populations
 GROUP BY age;
+
+SELECT *
+from table;
