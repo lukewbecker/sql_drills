@@ -1331,3 +1331,12 @@ GROUP BY age;
 
 SELECT *
 from table;
+
+-- Doing more advanced SQL practice:
+
+BEGIN TRY
+SELECT 'Foo' AS Result;
+END TRY
+BEGIN CATCH
+SELECT 'Bar' AS Result;
+END CATCH
