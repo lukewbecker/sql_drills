@@ -1340,3 +1340,6 @@ END TRY
 BEGIN CATCH
 SELECT 'Bar' AS Result;
 END CATCH
+
+SELECT *
+from table;
