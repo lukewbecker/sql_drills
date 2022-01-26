@@ -1343,3 +1343,6 @@ END CATCH
 
 SELECT *
 from table;
+
+SELECT *
+from table;
