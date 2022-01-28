@@ -1349,3 +1349,6 @@ from table;
 
 SELECT name
 from people;
+
+SELECT *
+FROM table;
