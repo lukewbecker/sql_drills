@@ -1358,3 +1358,9 @@ from table;
 
 SELECT names
 from people;
+
+SELECT AVG(age)
+FROM people
+WHERE age > 25
+GROUP BY age
+ORDER BY last_name;
