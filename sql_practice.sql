@@ -1364,3 +1364,6 @@ FROM people
 WHERE age > 25
 GROUP BY age
 ORDER BY last_name;
+
+SELECT *
+FROM name;
