@@ -1367,3 +1367,6 @@ ORDER BY last_name;
 
 SELECT *
 FROM name;
+
+SELECT *
+FROM table;
