@@ -1370,3 +1370,6 @@ FROM name;
 
 SELECT *
 FROM table;
+
+SELECT *
+from name;
