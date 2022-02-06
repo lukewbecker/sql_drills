@@ -1373,3 +1373,6 @@ FROM table;
 
 SELECT *
 from name;
+
+SELECT *
+FROM names;
