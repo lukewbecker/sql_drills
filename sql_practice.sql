@@ -1379,3 +1379,6 @@ FROM names;
 
 SELECT *
 from table;
+
+SELECT *
+FROM names_table;
