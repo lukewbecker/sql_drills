@@ -1382,3 +1382,6 @@ from table;
 
 SELECT *
 FROM names_table;
+
+SELECT names, ages, state
+FROM population;
