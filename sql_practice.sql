@@ -1385,3 +1385,6 @@ FROM names_table;
 
 SELECT names, ages, state
 FROM population;
+
+SELECT *
+FROM tables;
