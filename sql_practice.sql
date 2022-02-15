@@ -1402,3 +1402,6 @@ SELECT COUNT(name)
 FROM people;
 WHERE name IS LIKE %A%
 GROUP BY name;
+
+SELECT *
+FROM table;
