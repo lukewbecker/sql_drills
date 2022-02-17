@@ -1405,3 +1405,6 @@ GROUP BY name;
 
 SELECT *
 FROM table;
+
+SELECT *
+FROM table;
