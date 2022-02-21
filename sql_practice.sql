@@ -1411,3 +1411,6 @@ FROM table;
 
 SELECT *
 FROM table;
+
+SELECT *
+from table;
