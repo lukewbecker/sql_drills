@@ -1420,3 +1420,6 @@ FROM name_table;
 
 SELECT name
 FROM population;
+
+SELECT *
+FROM table;
