@@ -1429,3 +1429,8 @@ from name_table;
 
 SELECT *
 FROM table;
+
+SELECT COUNT(name)
+FROM people;
+WHERE name IS LIKE %Be%
+GROUP BY name;
