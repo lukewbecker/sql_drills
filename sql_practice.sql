@@ -1434,3 +1434,8 @@ SELECT COUNT(name)
 FROM people;
 WHERE name IS LIKE %Be%
 GROUP BY name;
+
+SELECT COUNT(name)
+FROM people;
+WHERE name IS LIKE %Smith%
+GROUP BY name;
