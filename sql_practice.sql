@@ -1439,3 +1439,6 @@ SELECT COUNT(name)
 FROM people;
 WHERE name IS LIKE %Smith%
 GROUP BY name;
+
+SELECT *
+FROM table;
