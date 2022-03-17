@@ -1468,3 +1468,6 @@ SELECT COUNT(name)
 FROM people;
 WHERE name IS LIKE %Gar%
 GROUP BY name;
+
+SELECT *
+FROM table;
