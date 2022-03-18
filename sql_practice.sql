@@ -1471,3 +1471,9 @@ GROUP BY name;
 
 SELECT *
 FROM table;
+
+SELECT COUNT(names)
+FROM people
+WHERE name IS LIKE %Smith%
+GROUP BY names
+ORDER BY age;
