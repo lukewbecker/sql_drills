@@ -1477,3 +1477,6 @@ FROM people
 WHERE name IS LIKE %Smith%
 GROUP BY names
 ORDER BY age;
+
+SELECT *
+FROM table;
