@@ -1480,3 +1480,7 @@ ORDER BY age;
 
 SELECT *
 FROM table;
+
+-- more practice
+SELECT *
+FROM table;
