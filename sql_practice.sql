@@ -1487,3 +1487,6 @@ FROM table;
 
 SELECT *
 FROM table;
+
+SELECT *
+FROM table;
