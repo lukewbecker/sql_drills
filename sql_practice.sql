@@ -1490,3 +1490,7 @@ FROM table;
 
 SELECT *
 FROM table;
+
+SELECT COUNT(names)
+FROM table_names
+GROUP BY names;
