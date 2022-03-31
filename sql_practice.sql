@@ -1497,3 +1497,6 @@ GROUP BY names;
 
 SELECT *
 FROM table;
+
+SELECT names
+FROM people_tbl;
