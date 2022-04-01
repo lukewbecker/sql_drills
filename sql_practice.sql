@@ -1500,3 +1500,6 @@ FROM table;
 
 SELECT names
 FROM people_tbl;
+
+SELECT ages
+FROM people_info_tbl;
