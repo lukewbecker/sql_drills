@@ -1503,3 +1503,7 @@ FROM people_tbl;
 
 SELECT ages
 FROM people_info_tbl;
+
+-- Testing if this uploads correctly to Github
+SELECT *
+FROM table;
