@@ -1507,3 +1507,6 @@ FROM people_info_tbl;
 -- Testing if this uploads correctly to Github
 SELECT *
 FROM table;
+
+SELECT *
+FROM table_of_names;
