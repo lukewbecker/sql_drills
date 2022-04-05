@@ -1510,3 +1510,6 @@ FROM table;
 
 SELECT *
 FROM table_of_names;
+
+SELECT *
+FROM table;
