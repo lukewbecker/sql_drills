@@ -1522,3 +1522,8 @@ FROM names;
 
 SELECT name
 FROM people;
+
+-- Hackerrank practice:
+
+SELECT *
+FROM table;
