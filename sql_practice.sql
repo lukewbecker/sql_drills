@@ -1527,3 +1527,6 @@ FROM people;
 
 SELECT *
 FROM table;
+
+SELECT *
+FROM names;
