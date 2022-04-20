@@ -1533,3 +1533,10 @@ FROM names;
 
 SELECT name
 FROM people;
+
+
+SELECT COUNT(age)
+FROM people_tbl
+WHERE age > 25
+GROUP BY age
+ORDER BY last_name;
