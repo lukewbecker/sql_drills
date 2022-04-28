@@ -1543,3 +1543,6 @@ ORDER BY last_name;
 
 SELECT *
 FROM table;
+
+SELECT *
+FROM people;
