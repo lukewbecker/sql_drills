@@ -1549,3 +1549,6 @@ FROM people;
 
 SELECT names
 FROM people;
+
+SELECT love
+FROM Sarah;
