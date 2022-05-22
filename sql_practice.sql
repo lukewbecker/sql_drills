@@ -1552,3 +1552,7 @@ FROM people;
 
 SELECT love
 FROM Sarah;
+
+SELECT names
+FROM name_table
+WHERE names IS "Sarah";
