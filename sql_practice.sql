@@ -1552,3 +1552,6 @@ FROM people;
 
 SELECT love
 FROM Sarah;
+
+SELECT *
+FROM table;
